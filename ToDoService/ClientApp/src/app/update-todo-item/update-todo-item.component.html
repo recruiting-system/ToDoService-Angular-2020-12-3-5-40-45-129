@@ -1,0 +1,13 @@
+<h1>This is update todo-item component</h1>
+
+<form (ngSubmit)="updateTodoItem()">
+    <label>Id</label>
+    <h4>{{todoItemService.updatingToDoItem.id}}</h4>
+    <label>Title: </label>
+    <input type="text" name="title" [(ngModel)]="todoItemService.updatingToDoItem.title">
+    <label>Description: </label>
+    <input type="text" name="description" [(ngModel)]="todoItemService.updatingToDoItem.description">
+    <label>IsDone</label>
+    <input type="checkbox" name="isDone" [(ngModel)]="todoItemService.updatingToDoItem.isDone">
+    <button type="submit">Submit</button>
+</form>
